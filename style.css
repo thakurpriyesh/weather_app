@@ -1,0 +1,140 @@
+*{
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 28px; /* Reduce font size on smaller screens */
+        margin-top: 60px;
+    }
+}
+#description, #temperature{
+    color: white;
+}
+.card{
+    width: 600px;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border: 5px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.search{
+    height: 6vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.search input{
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 60px;
+    padding-left: 12px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid white;
+    color: white;
+}
+.search input:hover{
+    color: white;
+
+}
+.search input:hover::placeholder{
+    color: white;
+}
+.search input::placeholder{
+    color: white;
+}
+.search button{
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    border: 3px solid white;
+    width: 60px;
+    margin-left:-30px ;
+    background-color: rgb(0, 0, 0);
+}
+.search button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.temp {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    font-family: consolas;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+    margin-top: -25px;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#humidity , #wind{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: consolas;
+    color:rgb(255, 255, 255);
+    gap: 3px;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.welcome {
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-family: consolas;
+    color: white;
+}
+#hi{
+    display: block;
+    margin-top: -45px;
+}
+h1{
+    display: block;
+    margin-top: 30px;
+}
