@@ -18,8 +18,36 @@ body{
 }
 @media (max-width: 768px) {
     .welcome h1 {
-        font-size: 28px; /* Reduce font size on smaller screens */
-        margin-top: 60px;
+        margin-top: 1.5vh;
+        font-size: 50px;
+    }
+    .search button{
+        margin-left: 3px;
+    }
+    .search input {
+        max-width: 80%; /* Adjust input width for smaller screens */
+        margin-left: -3%;
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+    .card {
+        max-width: 90%; /* Make card responsive */
+        max-height: 40%; /* Allow height to adjust based on content */
+        margin-top: -20%;
+    }
+    .details {
+        flex-direction: column; /* Stack details vertically */
+        align-items: center; /* Center align items */
+        padding-top: 30px;
+    }
+    .welcome p{
+        display: flex;
+        justify-content: space-around;
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .temp{
+        margin-top: 7%;
+        margin-bottom: 5%;
     }
 }
 #description, #temperature{
@@ -112,7 +140,7 @@ body{
     font-weight: 600;
     font-family: consolas;
     color:rgb(255, 255, 255);
-    gap: 3px;
+    gap: 6px;
 }
 
 .hidden{
@@ -136,5 +164,8 @@ body{
 }
 h1{
     display: block;
-    margin-top: 30px;
+    margin-top: 5vh;
+}
+#windy{
+    gap:3px
 }
