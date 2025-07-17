@@ -25,13 +25,13 @@ body{
         margin-left: 3px;
     }
     .search input {
-        max-width: 80%; /* Adjust input width for smaller screens */
+        max-width: 65%; /* Adjust input width for smaller screens */
         margin-left: -3%;
         font-size: 18px; /* Reduce font size for smaller screens */
     }
     .card {
         max-width: 90%; /* Make card responsive */
-        max-height: 40%; /* Allow height to adjust based on content */
+        max-height: 350px; /* Allow height to adjust based on content */
         margin-top: -20%;
     }
     .details {
